@@ -152,7 +152,7 @@ footer {
 }
 
 /* Larger Views ******************************/
-@media (min-width: 480px) {
+@media (min-width: 680px) {
     nav ul {
         display: flex;
     }
