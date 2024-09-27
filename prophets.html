@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/prophets.css">
+    <script src="scripts/prophets.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Latter-day Prophets</h1>
+        <!-- <button id="menu" aria-label="Toggle navigation">Menu</button> Added button for navigation -->
+        <!-- <nav class="navigation" aria-label="Main navigation"> Added navigation with aria-label -->
+        <!-- Add navigation links here if needed -->
+        <!-- </nav> -->
+    </header>
+    <main>
+        <!-- Added role and aria-labelledby for accessibility -->
+        <h2 id="cards-heading" class="visually-hidden">Prophet Cards</h2> <!-- Hidden heading for screen readers -->
+        <div id="cards" role="region" aria-labelledby="cards-heading">
+            <!-- Cards will be populated here by JavaScript -->
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>🔰Odusile Olufemi🔰Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
