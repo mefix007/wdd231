@@ -21,6 +21,20 @@ h1 {
     font-size: 3rem;
 }
 
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-bottom: 1px solid #bbb;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(106, 149, 230);
+
+}
+
 h2 {
     color: navy;
     margin: 0 0 1rem 0;
