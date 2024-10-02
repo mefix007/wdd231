@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ODUSILE OLUFEMI JOSEPH - WDD231</title>
+    <title>JAPHETH CHAMBER of COMMERCE</title>
     <meta name="description" content="WDD231- chamber of commerce projet- DOM - Odusile Olufemi.">
     <meta name="author" content="Odusile Olufemi">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,4 +15,140 @@
     <link rel="stylesheet" href="styles/directory.css">
     <script src="scripts/directory.js" defer></script>
 
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ODUSILE OLUFEMI JOSEPH - WDD231" />
+    <meta property="og:description" content="WDD231- chamber of commerce projet- DOM - Odusile Olufemi.." />
+    <meta property="og:image" content="https://www.example.com/path-to-image.jpg" />
+    <meta property="og:url" content="https://mefix007.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- For other formats, such as PNG -->
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png">
+    <!-- Optional: for Apple devices -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
 </head>
+
+<body>
+    <header>
+        <!-- <img src="images/ME.png" alt="profile image"> -->
+        <img src="images/japhet-logo.png" alt="Japheth_icon">
+        <h1>JAPHETH CHAMBER of COMMERCE</h1>
+        <!-- <div class="hamburger" id="hamburger">☰</div> Hamburger icon -->
+        <nav id="menu" class="navigation">
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background">
+            <img src="images/abeokuta-Computer-Village.png" alt="Abeokuta_computer_center">
+            <div class="keynote">
+                <strong><a href="#">Keynote Tickets</a></strong>
+            </div>
+        </div>
+        <div class="main_container">
+            <h2>Home</h2>
+            <div class="container">
+                <section class="event">
+                    <h3>Events</h3>
+                    <ul>
+                        <li>Sales of Iphones, Samsung, and other Android phones.</li>
+                        <li>Sales of Computers and Laptops</li>
+                        <li>Sales of Phones, Computers, and Laptops parts and accessories</li>
+                        <li>Repaires of all mobile phones, computers, and Laptops</li>
+                    </ul>
+                </section>
+                <section id="weather-card">
+                    <h3>Current Weather</h3>
+                    <img id="weather-icon" src="images/weather.svg" alt="sun weather icon">
+                    <table id="weather-table">
+                        <tr>
+                            <td class="table-title">Temperature: </td>
+                            <td id="temp-value">26°c</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Precipitation: </td>
+                            <td> 13%</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Wind: </td>
+                            <td>5km/h</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Humidity: </td>
+                            <td>83%</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Windchill: </td>
+                            <td id="windchill-factor"></td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="weather-card">
+                    <h3>Weather Forecast</h3>
+                    <img id="weather-icon" src="images/weather.svg" alt="sun weather icon">
+                    <table id="weather-table">
+                        <tr>
+                            <td class="table-title">Today: </td>
+                            <td id="temp-value">26°c</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Tomorrow: </td>
+                            <td> 23°c</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Friday: </td>
+                            <td>32°c</td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="full" id="full">
+                    <h2>Directory</h2>
+                    <nav class="navigation2">
+                        <button id="all" class="active">All</button>
+                        <button id="phone_dealers">Phone Dealers</button>
+                        <button id="phone_repairs">Phone Repairs</button>
+                        <button id="phone_parts">Accessories and Parts</button>
+                    </nav>
+                    <div id="directory">
+                        <!-- directory will be populated here by JavaScript -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="address">
+            <p>
+                MOPDATEC village
+                lalubu street okelewo, Abeokuta,
+                Ogun State.
+            </p>
+        </div>
+        <div class="sociolinks">
+            <a href="#" target="_blank">
+                <img src="images/facebook-svg.webp" alt="facebook icon" width="25">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/ig-icon.webp" alt="instagram icon" width="25">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/twitter-icon.webp" alt="instagram icon" width="25">
+            </a>
+        </div>
+        <div class="copywrite">
+            <p>©<span id="currentyear"></span>🔰Odusile Olufemi🔰Nigeria</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

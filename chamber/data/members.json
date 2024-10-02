@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "names": "Solosegzy Communications",
+            "addresses": "shop 5, tamac complex, okelewo Abeokuta",
+            "phone": "08034426480",
+            "email": "solosegzy@gmail.com",
+            "business": "Phone Dealer",
+            "image": "images/solosegzy.PNG"
+        },
+        {
+            "names": "LOBOT SYSTEM",
+            "addresses": "shop 2, tamac complex, okelewo Abeokuta",
+            "phone": "08133353469",
+            "email": "lobotsystem@gmail.com",
+            "business": "Phone Dealer",
+            "image": "images/lobot.PNG"
+        },
+        {
+            "names": "Soccerfiro Comms",
+            "addresses": "shop 15, tamac complex, okelewo Abeokuta",
+            "phone": "08069744186",
+            "email": "firocommunications@gmail.com",
+            "business": "Phone Repairs",
+            "image": "images/soca.PNG"
+        },
+        {
+            "names": "Aktech",
+            "addresses": "shop 56, tamac complex, okelewo Abeokuta",
+            "phone": "08133353469",
+            "email": "lobotsystem@gmail.com",
+            "business": "Phone Dealer",
+            "image": "images/lobot.PNG"
+        },
+        {
+            "names": "LOBOT SYSTEM",
+            "addresses": "shop 2, tamac complex, okelewo Abeokuta",
+            "phone": "08133353469",
+            "email": "lobotsystem@gmail.com",
+            "business": "Phone Dealer",
+            "image": "images/lobot.PNG"
+        },
+        {
+            "names": "LOBOT SYSTEM",
+            "addresses": "shop 2, tamac complex, okelewo Abeokuta",
+            "phone": "08133353469",
+            "email": "lobotsystem@gmail.com",
+            "business": "Phone Dealer",
+            "image": "images/lobot.PNG"
+        },
+        {
+            "names": "LOBOT SYSTEM",
+            "addresses": "shop 2, tamac complex, okelewo Abeokuta",
+            "phone": "08133353469",
+            "email": "lobotsystem@gmail.com",
+            "business": "Phone Dealer",
+            "image": "images/lobot.PNG"
+        }
+    ]
+}
