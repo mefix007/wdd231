@@ -336,4 +336,8 @@ footer {
         padding: 20px;
         border-top: solid var(--secondary) 3px;
     }
+
+    .sociolinks img {
+        width: 45px;
+    }
 }

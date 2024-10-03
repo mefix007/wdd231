@@ -4,38 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <title>Responsive Navigation</title>
-    <script src="test.js" defer></script>
-    <link rel="stylesheet" href="test.css">
+    <title>Members List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
 
+        .member {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
 
-    <style></style>
+        .member img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .member-details {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Members List</h1>
+    <div id="membersContainer"></div>
 
-    <header>
-        <img src="image/japhet-logo.png" alt="Logo"> <!-- Adjust the logo image -->
-        <h1>Website Testing</h1>
-        <div class="hamburger" id="hamburger">☰</div> <!-- Hamburger icon -->
-    </header>
+    <script>
+        // Sample JSON data  
+        const data = {
+            "members": [
+                {
+                    "names": "Solosegzy Communications",
+                    "addresses": "shop 5, tamac complex, okelewo Abeokuta",
+                    "phone": "08034426480",
+                    "email": "solosegzy@gmail.com",
+                    "business": "Phone Dealer",
+                    "order": 0,
+                    "image": "images/solosegzy.PNG"
+                },
+                {
+                    "names": "LOBOT SYSTEM",
+                    "addresses": "shop 2, tamac complex, okelewo Abeokuta",
+                    "phone": "08133353469",
+                    "email": "lobotsystem@gmail.com",
+                    "business": "Phone Dealer",
+                    "order": 1,
+                    "image": "images/lobot.PNG"
+                },
+                {
+                    "names": "Soccerfiro Comms",
+                    "addresses": "shop 15, tamac complex, okelewo Abeokuta",
+                    "phone": "08069744186",
+                    "email": "firocommunications@gmail.com",
+                    "business": "Phone Repairs",
+                    "order": 2,
+                    "image": "images/soca.PNG"
+                },
+                {
+                    "names": "Aktech",
+                    "addresses": "shop 56, tamac complex, okelewo Abeokuta",
+                    "phone": "08133353469",
+                    "email": "lobotsystem@gmail.com",
+                    "business": "Phone Dealer",
+                    "order": 3,
+                    "image": "images/lobot.PNG"
+                },
+                {
+                    "names": "LOBOT SYSTEM",
+                    "addresses": "shop 2, tamac complex, okelewo Abeokuta",
+                    "phone": "08133353469",
+                    "email": "lobotsystem@gmail.com",
+                    "business": "Phone Dealer",
+                    "order": 4,
+                    "image": "images/lobot.PNG"
+                },
+                {
+                    "names": "LOBOT SYSTEM",
+                    "addresses": "shop 2, tamac complex, okelewo Abeokuta",
+                    "phone": "08133353469",
+                    "email": "lobotsystem@gmail.com",
+                    "business": "Phone Dealer",
+                    "order": 5,
+                    "image": "images/lobot.PNG"
+                },
+                {
+                    "names": "LOBOT SYSTEM",
+                    "addresses": "shop 2, tamac complex, okelewo Abeokuta",
+                    "phone": "08133353469",
+                    "email": "lobotsystem@gmail.com",
+                    "business": "Phone Dealer",
+                    "order": 6,
+                    "image": "images/lobot.PNG"
+                }
+            ]
+        };
 
-    <nav class="navigation" id="navigation">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        // Function to display members  
+        function displayMembers(members) {
+            const membersContainer = document.getElementById('membersContainer');
+            members.forEach(member => {
+                // Create member card  
+                const memberCard = document.createElement('div');
+                memberCard.classList.add('member');
 
-    <div class="background">
-        <img src="background.jpg" alt="Background Image"> <!-- Adjust the background image -->
-        <div class="keynote">
-            <a href="#keynote">Keynotes</a>
-        </div>
-    </div>
+                // Create image element  
+                const img = document.createElement('img');
+                img.src = member.image;
+                img.alt = member.names;
 
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+                // Create details container  
+                const memberDetails = document.createElement('div');
+                memberDetails.classList.add('member-details');
+
+                // Add member information  
+                memberDetails.innerHTML = `  
+                    <strong>Name:</strong> ${member.names}<br>  
+                    <strong>Address:</strong> ${member.addresses}<br>  
+                    <strong>Phone:</strong> ${member.phone}<br>  
+                    <strong>Email:</strong> ${member.email}<br>  
+                    <strong>Business:</strong> ${member.business}<br>  
+                    <strong>Order:</strong> ${member.order}  
+                `;
+
+                // Append image and details to card  
+                memberCard.appendChild(img);
+                memberCard.appendChild(memberDetails);
+
+                // Add member card to container  
+                membersContainer.appendChild(memberCard);
+            });
+        }
+
+        // Call the function with the members array  
+        displayMembers(data.members);  
+    </script>
 </body>
 
 </html>

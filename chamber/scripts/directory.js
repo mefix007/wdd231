@@ -80,8 +80,8 @@ const displayMembers = (members) => {
         portrait.setAttribute('src', member.image);
         portrait.setAttribute('alt', `Portrait of ${member.names}`);
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '140');
-        portrait.setAttribute('height', '240');
+        portrait.setAttribute('width', '340');
+        portrait.setAttribute('height', '440');
 
         // Append the created elements to the card  
         card.appendChild(portrait);
