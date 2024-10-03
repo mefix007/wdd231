@@ -47,8 +47,8 @@ async function getMembersData() {
 
         const data = await response.json();
         // Access members within the JSON structure  
-        console.table(data[0].members);
-        displayMembers(data[0].members);
+        console.table(data.members);
+        displayMembers(data.members);
     } catch (error) {
         console.error('Error fetching members data:', error);
     }
