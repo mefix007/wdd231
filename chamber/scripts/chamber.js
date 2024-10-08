@@ -19,7 +19,7 @@ menu.addEventListener('click', function () {
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('#figcaption');
 
 // CREATE A REQUIRED VARIABLE FOR THE URL
 const myKey = "9bad2045dce03fc215cd29e385c1a16f"
@@ -47,11 +47,11 @@ async function fetchCurrentWeather() {
 // Display the Json file result
 function displayCurrentWeather(data) {
     // console.log('hello')
-    captionDesc.innerHTML = data.weather[3].description
+    captionDesc.innerHTML = data.weather[0].description
     currentTemp.innerHTML = `${data.main.temp}&deg;C`
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[3].icon}@2x.png`
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     weatherIcon.setAttribute('src', iconsrc)
-    weatherIcon.setAttribute('alt', data.weather[3].description)
+    weatherIcon.setAttribute('alt', data.weather[0].description)
 
 }
 
