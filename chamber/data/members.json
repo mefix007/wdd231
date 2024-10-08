@@ -6,6 +6,7 @@
             "phone": "08034426480",
             "email": "solosegzy@gmail.com",
             "business": "Phone Dealer",
+            "membership_level": "gold",
             "image": "images/solosegzy.PNG"
         },
         {
@@ -14,6 +15,7 @@
             "phone": "08133353469",
             "email": "lobotsystem@gmail.com",
             "business": "Phone Dealer",
+            "membership_level": "gold",
             "image": "images/lobot.PNG"
         },
         {
@@ -22,6 +24,7 @@
             "phone": "08069744186",
             "email": "firocommunications@gmail.com",
             "business": "Phone Repairs",
+            "membership_level": "silver",
             "image": "images/soca.PNG"
         },
         {
@@ -30,6 +33,7 @@
             "phone": "08109353469",
             "email": "aktechcommunications@gmail.com",
             "business": "Phone Repairs",
+            "membership_level": "bronze",
             "image": "images/lobot.PNG"
         },
         {
@@ -38,6 +42,7 @@
             "phone": "08130653469",
             "email": "pagoaccessories@gmail.com",
             "business": "Phone Accessories",
+            "membership_level": "silver",
             "image": "images/lobot.PNG"
         },
         {
@@ -46,6 +51,7 @@
             "phone": "08133375469",
             "email": "okoncomms@gmail.com",
             "business": "Phone Accessories",
+            "membership_level": "bronze",
             "image": "images/lobot.PNG"
         },
         {
@@ -54,6 +60,7 @@
             "phone": "08133453469",
             "email": "mondaytelecomms@gmail.com",
             "business": "Phone Repairs",
+            "membership_level": "bronze",
             "image": "images/lobot.PNG"
         }
     ]

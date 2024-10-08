@@ -1,0 +1,16 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: aquamarine;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    color: rgb(6, 6, 33);
+}
+
+figcaption {
+    text-transform: capitalize;
+    text-align: center;
+}

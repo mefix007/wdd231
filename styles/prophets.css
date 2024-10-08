@@ -21,7 +21,6 @@ h1 {
     font-size: 3rem;
 }
 
-
 nav {
     display: flex;
     align-items: center;
@@ -40,8 +39,6 @@ h2 {
     margin: 0 0 1rem 0;
     border-bottom: 1px solid #bbb;
 }
-
-
 
 p {
     margin: 0;

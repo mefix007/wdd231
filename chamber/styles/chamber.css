@@ -10,7 +10,7 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
-    background-color: #7d82a3;
+    background-color: rgb(58, 153, 184);
     width: 100%;
 }
 
@@ -150,24 +150,12 @@ section nav a {
     align-items: center;
     text-align: right;
     padding: 20px;
-    border-top: solid var(--secondary) 3px;
+    border-top: solid 3px;
+    background-color: rgb(58, 153, 184);
 }
 
 .event ul {
     padding: 20px;
-    text-align: left;
-}
-
-/* .weather {
-    width: 25%;
-} */
-
-.table-title {
-    font-weight: bold;
-    padding: 4px;
-}
-
-td:last-child {
     text-align: left;
 }
 
@@ -176,9 +164,16 @@ td:last-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: right;
+    text-align: center;
     padding: 20px;
-    border-top: solid var(--secondary) 3px;
+    border-top: solid 3px;
+    background-color: rgb(58, 153, 184);
+
+    text-transform: capitalize;
+}
+
+#forecast {
+    display: grid;
 }
 
 #weather-icon1,
@@ -193,7 +188,8 @@ td:last-child {
     align-items: center;
     text-align: right;
     padding: 20px;
-    border-top: solid var(--secondary) 3px;
+    border-top: solid 3px;
+    background-color: #6b9bbc;
 }
 
 .full h2 {
@@ -227,8 +223,10 @@ button {
     flex-direction: row;
 } */
 #directory {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: rgb(34, 90, 112);
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
     height: auto;
     width: auto;
 }
@@ -290,9 +288,9 @@ footer {
         /* right: 3vw; */
         border-top: none;
         font-size: smaller;
-        background-color: aquamarine;
+        background-color: rgb(58, 153, 184);
         opacity: 0.8;
-        width: auto;
+        width: 30%;
     }
 
     #weather-icon1,
@@ -313,8 +311,9 @@ footer {
         /* right: 3vw; */
         border-top: none;
         font-size: smaller;
-        background-color: aquamarine;
+        background-color: rgb(58, 153, 184);
         opacity: 0.8;
+        width: 60%;
     }
 
     #weather-card #weather-card2 h3 {
@@ -327,6 +326,13 @@ footer {
         width: 8rem;
     }
 
+    #forecast {
+        display: flex;
+        align-items: self-end;
+        justify-content: space-between;
+        align-self: normal;
+    }
+
     .full {
         width: 100%;
         display: flex;
@@ -334,7 +340,7 @@ footer {
         align-items: center;
         text-align: right;
         padding: 20px;
-        border-top: solid var(--secondary) 3px;
+        border-top: solid 3px;
     }
 
     .sociolinks img {
