@@ -172,9 +172,9 @@ section nav a {
     text-transform: capitalize;
 }
 
-#forecast {
+/* #forecast {
     display: grid;
-}
+} */
 
 #weather-icon1,
 #weather-icon2 {
