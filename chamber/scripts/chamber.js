@@ -129,6 +129,58 @@ async function getMembersData() {
     }
 }
 
+// Function to display spotlight members  
+const displaySpotlightMembers = () => {
+    const spotlightSection = document.querySelector('#spotlight');
+    spotlightSection.innerHTML = ''; // Clear existing spotlight content  
+
+    // Filter members for Gold and Silver levels  
+    const qualifiedMembers = members.filter(member =>
+        member.membership_level === 'Gold' || member.membership_level === 'Silver'
+    );
+
+    // Shuffle the qualified members array  
+    const shuffledMembers = qualifiedMembers.sort(() => 0.5 - Math.random());
+
+    // Select 2 or 3 members randomly  
+    const spotlightMembers = shuffledMembers.slice(0, 3);
+
+    // Loop through selected spotlight members and display their information  
+    spotlightMembers.forEach(member => {
+        let spotlightCard = document.createElement('div');
+        spotlightCard.classList.add('spotlight-card'); // Optional: Add a class for styling  
+
+        // Create elements for company information  
+        let companyName = document.createElement('h3');
+        let logo = document.createElement('img');
+        let phone = document.createElement('p');
+        let address = document.createElement('p');
+        let websiteLink = document.createElement('a');
+        let membershipLevel = document.createElement('p');
+
+        // Set content for the spotlight member  
+        companyName.textContent = member.business; // Assuming 'business' is the company name  
+        logo.setAttribute('src', member.logo); // Assuming 'logo' is the image URL  
+        logo.setAttribute('alt', `Logo of ${member.business}`);
+        phone.textContent = `Phone: ${member.phone}`;
+        address.textContent = `Address: ${member.addresses}`; // Assuming 'addresses' is the address  
+        websiteLink.setAttribute('href', member.website); // Assuming 'website' is the URL  
+        websiteLink.textContent = `Visit Website`;
+        membershipLevel.textContent = `Membership Level: ${member.membership_level}`; // Assuming 'membership_level' is the level  
+
+        // Append elements to the spotlight card  
+        spotlightCard.appendChild(logo);
+        spotlightCard.appendChild(companyName);
+        spotlightCard.appendChild(phone);
+        spotlightCard.appendChild(address);
+        spotlightCard.appendChild(websiteLink);
+        spotlightCard.appendChild(membershipLevel);
+
+        // Append the spotlight card to the spotlight section  
+        spotlightSection.appendChild(spotlightCard);
+    });
+};
+
 // // Handling navigation link clicks for filtering courses  
 // const all = document.getElementById("#all");
 // const phoneDealer = document.getElementById("#phone_dealers");
