@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/chamber.css">
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="ODUSILE OLUFEMI JOSEPH - WDD231">
@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="main_container">
-            <h2>Home</h2>
+            <h2>Join</h2>
             <div class="container">
                 <section class="event">
                     <h3>Events</h3>
@@ -83,19 +83,83 @@
                         <p><strong>Thursday: </strong><span id="forecast3-temp"></span></p>
                         <img id="weather4-icon" src="https://openweathermap.org/city/2352947" alt="weather_forecast">
                         <div id="figcaption4"></div>
-                    </div> <!-- </section> -->
+                    </div>
                 </section>
-                <section class="full" id="full">
-                    <h2>Membership</h2>
-                    <nav class="navigation2">
-                        <button id="all" class="active">All</button>
-                        <button id="phone_dealers">Phone Dealers</button>
-                        <button id="phone_repairs">Phone Repairs</button>
-                        <button id="phone_parts">Accessories and Parts</button>
-                    </nav>
-                    <!-- directory will be populated here by JavaScript -->
-                    <div id="directory"></div>
-                    <div id="spotlight"></div>
+                <section class="form">
+                    <h2>Membership Application Form</h2>
+                    <form method="get" action="thankyou.html" class="thankyou">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label>Firstname</label>
+                            <input type="text" name="firstname" autocomplete="on" required>
+
+                            <label>Lastname</label>
+                            <input type="text" name="lastname" autocomplete="on" required>
+
+                            <label>Email</label>
+                            <input type="telephone" name="email" autocomplete="on" required
+                                placeholder="example@email.com">
+
+                            <label>Phone No.</label>
+                            <input type="text" name="phone" autocomplete="on" required>
+
+                            <label>Organisation</label>
+                            <input type="text" name="organisation" autocomplete="on" required>
+
+                            <!--</fieldset> -->
+                            <div class="members_level">
+                                <legend>Membership Level</legend>
+                                <input type="radio" id="first" name="options" value="NP" required><label for="first">NP
+                                    Membership</label><br>
+                                <input type="radio" id="second" name="options" value="Bronze" required><label
+                                    for="second">Bronze
+                                    Membership</label><br>
+                                <input type="radio" id="third" name="options" value="Silver" required><label
+                                    for="third">Silver
+                                    Membership</label><br>
+                                <input type="radio" id="forth" name="options" value="Gold" required><label
+                                    for="forth">Gold
+                                    Membership</label>
+                            </div>
+                            <!-- </fieldset>
+                            <fieldset class="description"> -->
+                            <legend>Business/Organization Description</legend>
+                            <label for="business_name">Business Name:</label>
+                            <input type="text" id="business_name" name="business_name" required>
+
+                            <label for="title">Title:</label>
+                            <input type="text" id="title" name="title" required>
+
+                            <label for="description">Description:</label>
+                            <textarea id="description" name="description" rows="4" required></textarea>
+                            <!-- <label for="timestamp">Timestamp:</label> -->
+                            <input type="hidden" id="timestamp" name="timestamp">
+                            <button href="thankyou.html">Submit Form</button>
+                        </fieldset>
+                    </form>
+                </section>
+                <section class="membership" id="membership">
+                    <h2>Membership Levels</h2>
+                    <div class="card">
+                        <h3>Non Profit Membership</h3>
+                        <button id="openButton1">Learn More</button>
+                    </div>
+                    <div class="card">
+                        <h3>Bronze Membership</h3>
+                        <button id="openButton2">Learn More</button>
+                    </div>
+                    <div class="card">
+                        <h3>Silver Membership</h3>
+                        <button id="openButton3">Learn More</button>
+                    </div>
+                    <div class="card">
+                        <h3>Gold Membership</h3>
+                        <button id="openButton4">Learn More</button>
+                    </div>
+                    <dialog id="dialogBox">
+                        <div></div>
+                        <button id="closeButton">X</button>
+                    </dialog>
                 </section>
             </div>
         </div>

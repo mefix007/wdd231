@@ -113,6 +113,7 @@ nav a:hover {
 .main_container h2 {
     margin-top: -4px;
     padding-left: 20px;
+    padding-right: 20px;
     background-color: #182731;
     color: antiquewhite;
 }
@@ -168,13 +169,9 @@ section nav a {
     padding: 20px;
     border-top: solid 3px;
     background-color: rgb(58, 153, 184);
-
+    width: auto;
     text-transform: capitalize;
 }
-
-/* #forecast {
-    display: grid;
-} */
 
 #weather-icon1,
 #weather-icon2 {
@@ -207,21 +204,27 @@ section nav a {
 }
 
 button {
-    background-color: #36454f;
     color: azure;
     padding: 6px;
     background-color: #36454f;
+
 }
 
-/* #directory {
-    justify-content: center;
-    flex-wrap: wrap;
-    height: fit-content;
-    width: fit-content;
-    display: inline-flex;
-    font-size: small;
-    flex-direction: row;
-} */
+.card {
+    align-items: center;
+    border: 5px solid #262a36;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #97c3e1;
+    width: calc(90% - 20px);
+    /* Make four cards in a row for large screens */
+    transition: box-shadow 1.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 #directory {
     background-color: rgb(34, 90, 112);
     justify-content: center;
@@ -240,6 +243,94 @@ section {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+}
+
+fieldset {
+    display: grid;
+    text-align: justify;
+    border: none;
+    grid-row-gap: 5px;
+}
+
+legend {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.form h2 {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+input {
+    height: 15px;
+}
+
+.membership {
+    display: grid;
+    grid-auto-rows: 6rem;
+    justify-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+section#membership.membership {
+    opacity: 150vh;
+    animation-duration: 1s;
+    animation-name: slide-up;
+
+    @keyframes slide-up {
+        from {
+            translate: 150vh 0;
+            scale: 200% 1
+        }
+
+        to {
+            translate: 0 0;
+            scale: 100% 1;
+        }
+    }
+}
+
+.form {
+    width: auto;
+}
+
+.membership {
+    width: auto;
+}
+
+dialog {
+    justify-self: center;
+    width: 18rem;
+    height: auto;
+    align-self: center;
+}
+
+#dialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: #a6d4f4;
+    padding: 5px;
+    border-bottom: #777 1px solid;
+}
+
+#dialog p {
+    padding: 10px;
+    color: #111a38;
+}
+
+::backdrop {
+    background-color: rgba(97, 169, 205, 0.6);
+}
+
+.result {
+    justify-items: center;
+    height: 15rem;
+    display: grid;
+    margin: 10px;
+    padding: 10px;
 }
 
 .sociolonks img {
@@ -313,7 +404,7 @@ footer {
         font-size: smaller;
         background-color: rgb(58, 153, 184);
         opacity: 0.8;
-        width: 60%;
+        /* width: 30% 60%; */
     }
 
     #weather-card #weather-card2 h3 {
@@ -341,6 +432,26 @@ footer {
         text-align: right;
         padding: 20px;
         border-top: solid 3px;
+    }
+
+    .result {
+        display: grid;
+        justify-items: baseline;
+    }
+
+    dialog {
+        justify-self: end;
+        width: 18rem;
+        height: auto;
+        align-self: center;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    .membership {
+        width: 30%;
     }
 
     .sociolinks img {
