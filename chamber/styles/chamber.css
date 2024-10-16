@@ -276,7 +276,6 @@ input {
 }
 
 section#membership.membership {
-    opacity: 150vh;
     animation-duration: 1s;
     animation-name: slide-up;
 }
