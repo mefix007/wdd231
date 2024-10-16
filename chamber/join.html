@@ -97,18 +97,17 @@
                             <input type="text" name="lastname" autocomplete="on" required>
 
                             <label>Email</label>
-                            <input type="telephone" name="email" autocomplete="on" required
-                                placeholder="example@email.com">
+                            <input type="email" name="email" autocomplete="on" required placeholder="example@email.com">
 
                             <label>Phone No.</label>
-                            <input type="text" name="phone" autocomplete="on" required>
+                            <input type="tel" name="phone" autocomplete="off" required>
 
                             <label>Organisation</label>
                             <input type="text" name="organisation" autocomplete="on" required>
 
                             <!--</fieldset> -->
                             <div class="members_level">
-                                <legend>Membership Level</legend>
+                                <h3>Membership Level</h3>
                                 <input type="radio" id="first" name="options" value="NP" required><label for="first">NP
                                     Membership</label><br>
                                 <input type="radio" id="second" name="options" value="Bronze" required><label
@@ -123,7 +122,7 @@
                             </div>
                             <!-- </fieldset>
                             <fieldset class="description"> -->
-                            <legend>Business/Organization Description</legend>
+                            <h3>Business/Organization Description</h3>
                             <label for="business_name">Business Name:</label>
                             <input type="text" id="business_name" name="business_name" required>
 
@@ -134,7 +133,7 @@
                             <textarea id="description" name="description" rows="4" required></textarea>
                             <!-- <label for="timestamp">Timestamp:</label> -->
                             <input type="hidden" id="timestamp" name="timestamp">
-                            <button href="thankyou.html">Submit Form</button>
+                            <a href="thankyou.html">Submit Form</a>
                         </fieldset>
                     </form>
                 </section>
