@@ -203,11 +203,13 @@ section nav a {
     margin: 0px;
 }
 
-button {
+button,
+.button {
     color: azure;
     padding: 6px;
     background-color: #36454f;
-
+    text-align: center;
+    text-decoration: none;
 }
 
 .card {
