@@ -1,0 +1,28 @@
+{
+    "discovery": [
+        {
+            "image": "images/abk_com1.webp",
+            "caption": "Gov. Amosun formally opening Abeokuta computer village"
+        },
+        {
+            "image": "images/abk_com2.webp",
+            "caption": "Abeokuta computer village engineers at work"
+        },
+        {
+            "image": "images/abk_museum.webp",
+            "caption": "Ransome Kuti Museum in Abeokuta"
+        },
+        {
+            "image": "images/abk3.webp",
+            "caption": "Cultural display at Abeokuta carnival "
+        },
+        {
+            "image": "images/centinary_hall.webp",
+            "caption": "The oldest hall in abeokuta"
+        },
+        {
+            "image": "images/olumo_rock.webp",
+            "caption": "Front view of Olumo rock in Abeokuta"
+        }
+    ]
+}
