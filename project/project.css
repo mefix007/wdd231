@@ -1,0 +1,37 @@
+:root {
+    --primary: #F03C3C;
+    --secondary: #ED441E;
+    --Tetiary: #F27F32;
+    --Additional_Color: #F77A0C;
+    --Background_Color: #FEFEFE;
+    --text-color: rgb(24, 22, 22);
+    /* --active: rgba(240, 170, 40, 0.849); */
+    --nav-text: rgb(138, 183, 228);
+    /* --layout: solid 1px rgb(253, 105, 112); */
+    --cards: rgb(220, 232, 240);
+}
+
+* {
+    padding: 2px;
+    margin: 2px;
+    background-color: var(--Background_Color);
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2,
+h3 {
+    text-align: justify;
+}
+
+img {
+    display: flex;
+    justify-items: center;
+}
+
+footer {
+    text-align: center;
+}
