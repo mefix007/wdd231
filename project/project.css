@@ -30,6 +30,11 @@ h3 {
 img {
     display: flex;
     justify-items: center;
+    margin: auto;
+}
+
+img>wirefram1 {
+    width: 80%;
 }
 
 footer {
