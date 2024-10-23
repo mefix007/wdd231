@@ -331,6 +331,11 @@ aside {
     display: grid;
 }
 
+aside h3 {
+    text-align: center;
+    font-size: medium;
+}
+
 aside .caption {
     margin: 5px;
     margin-top: -5px;
