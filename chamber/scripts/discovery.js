@@ -51,14 +51,14 @@ const displayDiscovery = (discoveries) => { // Renamed parameter for clarity
         let caption = document.createElement('p'); // Element for caption  
 
         // Build the h2 content to show the member's full name or other identifier  
-        caption.textContent = `caption: ${discovery.caption}`; // Add caption display  
+        caption.textContent = `${discovery.caption}`; // Add caption display  
 
         // Set up the image portrait  
         portrait.setAttribute('src', discovery.image);
         portrait.setAttribute('alt', `Portrait of ${discovery.name}`); // Corrected to refer to 'discovery.name'  
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '80');
-        portrait.setAttribute('height', '120');
+        portrait.setAttribute('width', '320');
+        portrait.setAttribute('height', '300');
 
         // Append the created elements to the card  
         card.appendChild(portrait);
@@ -68,3 +68,40 @@ const displayDiscovery = (discoveries) => { // Renamed parameter for clarity
         directory.appendChild(card);
     });
 };
+
+
+// script for users visit from localstorage
+document.addEventListener("DOMContentLoaded", function () {
+    // Select the element where the visit message will be displayed
+    const visitMessageElement = document.getElementById('visitMessage'); // Ensure this ID matches your HTML
+
+    // Check if the element exists
+    if (visitMessageElement) {
+        const lastVisit = localStorage.getItem('lastVisit');
+        const now = new Date();
+        const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
+
+        if (!lastVisit) {
+            // First visit
+            visitMessageElement.textContent = `Welcome! Let us know if you have any questions.`;
+        } else {
+            const lastVisitDate = new Date(lastVisit);
+            const timeDifference = now - lastVisitDate;
+            const daysSinceVisit = Math.floor(timeDifference / oneDay);
+
+            if (daysSinceVisit < 1) {
+                // Less than a day since last visit
+                visitMessageElement.textContent = `Back so soon! Awesome!`;
+            } else {
+                // More than a day since last visit
+                const dayText = daysSinceVisit === 1 ? "day" : "days";
+                visitMessageElement.textContent = `You last visited ${daysSinceVisit} ${dayText} ago.`;
+            }
+        }
+
+        // Update the last visit date in localStorage
+        localStorage.setItem('lastVisit', now.toISOString());
+    } else {
+        console.error("The element with ID 'visitMessage' was not found.");
+    }
+});

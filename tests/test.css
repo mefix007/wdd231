@@ -1,153 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
+    display: flex;
     font-family: Arial, sans-serif;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #7d82a3;
-    /* Background color */
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
 }
 
-header img {
-    width: 100px;
-    height: 80px;
-    padding: 3px;
-    margin: 10px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    display: block;
-    margin: 0.6em 0.5em 0.5em 0.5em;
-    /* Simplified margin */
-}
-
-.hamburger {
-    display: none;
-    /* Initially hide the hamburger button */
-    font-size: 24px;
-    /* Size of the hamburger icon */
-    cursor: pointer;
-    /* Change cursor */
-}
-
-.navigation {
-    display: flex;
-    /* Display links in a row by default */
-}
-
-.navigation a {
-    margin: 0 10px;
-    /* Space between links */
-    text-decoration: none;
-    /* Remove underline */
-    color: #000;
-    /* Link color */
-}
-
-nav a:hover {
-    text-decoration: underline;
-    /* Underline effect on hover */
-}
-
-.active {
-    color: yellow;
-    /* Active link color */
-}
-
-/* Media Query for Small Screens */
-@media (max-width: 680px) {
-    .hamburger {
-        display: block;
-        /* Show hamburger button */
-    }
-
-    .navigation {
-        display: none;
-        /* Hide the navigation links by default */
-        flex-direction: column;
-        /* Arrange links vertically */
-        position: absolute;
-        /* Position for dropdown effect */
-        right: 10px;
-        /* Positioning */
-        top: 60px;
-        /* Positioning */
-        background-color: #fff;
-        /* Background color */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        /* Optional shadow */
-        z-index: 1;
-        /* Ensure visibility */
-    }
-
-    .navigation.show {
-        display: flex;
-        /* Show navigation when active */
-    }
-
-    .navigation a {
-        margin: 10px;
-        /* Space for vertical links */
-    }
-
-    /* Style for close symbol */
-    .navigation.show::before {
-        content: "X";
-        /* Content for close icon */
-        position: absolute;
-        /* Positioning */
-        right: 10px;
-        /* Align to the right */
-        top: 10px;
-        /* Align to the top */
-        font-size: 24px;
-        /* Size for close icon */
-        cursor: pointer;
-        /* Change cursor */
-    }
-}
-
-/* Background Styles */
-.background {
-    position: relative;
-    /* Container for position contexts */
-}
-
-.background img {
-    height: 25rem;
-    /* Image height */
-    width: 100%;
-    /* Full width */
-}
-
-/* Keynote Styles */
-.keynote {
-    position: absolute;
-    /* Position within parent */
-    bottom: 10px;
-    /* Distance from bottom */
-    right: 10px;
-    /* Distance from right */
-    background-color: #182731;
-    /* Keynote background color */
-    padding: 10px;
-    /* Padding within keynote */
-    border-radius: 5px;
-    /* Rounded corners */
-}
-
-.keynote a {
-    text-decoration: none;
-    /* Remove underline */
-    color: antiquewhite;
-    /* Link color */
+.content {
+    width: 75%;
+    padding: 20px;
 }
