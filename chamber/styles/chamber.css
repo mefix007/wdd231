@@ -63,8 +63,8 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.active {
-    color: yellow;
+nav .active {
+    background-color: rgb(62, 101, 68);
 }
 
 .show li {

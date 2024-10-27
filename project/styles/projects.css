@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+:root {
+    --primary: #fc6e6e;
+    --secondary: #ff5731;
+    --Tetiary: #f27f32;
+    --Additional_Color: #f77a0c;
+    --Background_Color: #fffafa;
+    --text-color: #0e0e0e;
+    /* --active: rgba(240, 170, 40, 0.849); */
+    --nav-text: rgb(138, 183, 228);
+    /* --layout: solid 1px rgb(253, 105, 112); */
+    --cards: rgb(220, 232, 240);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,29 +20,28 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: var(--Background_Color);
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(58, 153, 184);
+    background-color: var(--Background_Color);
     width: 100%;
+    height: auto;
 }
 
 header img {
-    width: 100px;
-    height: 80px;
-    padding: 3px;
-    margin: 10px;
+    width: 80px;
+    height: 65px;
+    padding: 2px;
 }
 
 header h1 {
     font-size: 2.5rem;
     display: block;
-    /* text-align: center; */
     margin-block-start: 0.6em;
-    margin-block-end: 0.5em;
-    margin-inline: 0.5em;
+    margin-inline: auto;
 }
 
 #menu::before {
@@ -35,11 +49,13 @@ header h1 {
 }
 
 nav {
+    border-radius: 5px;
+    font-size: smaller;
     position: absolute;
     padding: 5px;
-    margin: 10px;
+    margin: 4px;
     right: 10px;
-    background-color: #36454f;
+    background-color: var(--primary);
     z-index: 1;
 }
 
@@ -53,7 +69,7 @@ nav ul li {
 
 nav a {
     display: block;
-    color: #fff;
+    color: var(--text-color);
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -63,8 +79,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.active {
-    color: yellow;
+nav .active {
+    background-color: #ffe4c5;
+    border-radius: 15px;
 }
 
 .show li {
@@ -72,5 +89,31 @@ nav a:hover {
 }
 
 #menu.show::before {
-    content: "X";
+    content: "❌";
+}
+
+
+
+/* Larger Views ******************************/
+@media (min-width: 980px) {
+    nav {
+        align-self: flex-end;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    nav ul li a {
+        text-align: center;
+    }
+
+    #menu::before {
+        display: none;
+    }
 }
