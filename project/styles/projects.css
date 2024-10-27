@@ -92,6 +92,36 @@ nav .active {
     content: "❌";
 }
 
+.background {
+    /* border-radius: none; */
+    position: relative;
+    /* text-align: end; */
+}
+
+.background img {
+    height: 25rem;
+    width: 100%;
+}
+
+.keynote {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.keynote a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.keynote a:hover {
+    text-decoration: underline;
+}
+
+
 
 
 /* Larger Views ******************************/
