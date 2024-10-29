@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 
 :root {
-    --primary: #fc6e6e;
-    --secondary: #ff5731;
-    --Tetiary: #f27f32;
+    --primary: #f47171;
+    --secondary: #fdefef;
+    --Tetiary: #4f0606;
     --Additional_Color: #f77a0c;
     --Background_Color: #fffafa;
     --text-color: #0e0e0e;
@@ -93,14 +93,16 @@ nav .active {
 }
 
 .background {
-    /* border-radius: none; */
+    background-color: var(--Tetiary);
+    justify-content: center;
+    display: flex;
     position: relative;
-    /* text-align: end; */
 }
 
 .background img {
-    height: 25rem;
-    width: 100%;
+    margin-bottom: -5px;
+    height: 20rem;
+    width: 35rem;
 }
 
 .keynote {
@@ -121,8 +123,44 @@ nav .active {
     text-decoration: underline;
 }
 
+.upper_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.upper_section img {
+    width: 20rem;
+    height: 12.5rem;
+}
 
+.lower_section {
+    padding: 5px;
+    margin: 20px;
+    display: grid;
+    margin-bottom: 20px;
+    grid-gap: 20px;
+}
+
+.lower_section img {
+    width: 300px;
+    height: 200px;
+}
+
+#phone,
+#watch,
+#laptop {
+    background-color: var(--secondary);
+}
+
+footer {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 20px;
+}
 
 /* Larger Views ******************************/
 @media (min-width: 980px) {
@@ -145,5 +183,14 @@ nav .active {
 
     #menu::before {
         display: none;
+    }
+
+    #phone img,
+    #watch img {
+        float: right;
+    }
+
+    #laptop img {
+        float: left;
     }
 }
