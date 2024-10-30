@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+:root {
+    --primary: #f47171;
+    --secondary: #fdefef;
+    --Tetiary: #4f0606;
+    --Additional_Color: #ff733b;
+    --Background_Color: #fffafa;
+    --text-color: #0e0e0e;
+    /* --active: rgba(240, 170, 40, 0.849); */
+    --nav-text: rgb(138, 183, 228);
+    /* --layout: solid 1px rgb(253, 105, 112); */
+    --cards: rgb(220, 232, 240);
+}
+
+aside {
+    display: grid;
+}
+
+aside h3 {
+    text-align: center;
+    font-size: medium;
+}
+
+aside .caption {
+    margin: 5px;
+    margin-top: -5px;
+    font-size: small;
+    width: 300px;
+}
+
+aside img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    width: 280px;
+    height: 100px;
+    padding: 10px;
+    background-color: var(--primary);
+    border-right: 1px solid #ccc;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form {
+    margin: auto;
+}
+
+fieldset {
+    display: grid;
+    text-align: justify;
+    border: none;
+    grid-row-gap: 5px;
+}
+
+legend {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.form h2 {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+input {
+    height: 20px;
+}
+
+#submit {
+    background-color: var(--primary);
+}
+
+.members_level {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -43,3 +43,16 @@ function changeSlide(n) {
 setInterval(function () {
     showSlides(slideIndex += 1);
 }, 3000); // Change image every 3 seconds
+
+// Get current page URL
+const currentUrl = window.location.href;
+
+// Select all navigation links
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Loop through each link and add "active" class to the matching link
+navLinks.forEach(link => {
+    if (link.href === currentUrl) {
+        link.classList.add('active');
+    }
+});

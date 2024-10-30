@@ -12,7 +12,9 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="styles/projects.css">
-    <script src="script/projects.js" defer></script>
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="script/projects_index.js" defer></script>
+    <script src="script/join.js" defer></script>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="ODUSILE OLUFEMI JOSEPH - WDD231">
@@ -38,9 +40,9 @@
         <!-- <div class="hamburger" id="hamburger">☰</div> Hamburger icon -->
         <nav id="menu" class="navigation">
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discovery.html">Discovery</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="discovery.html" class="nav-link">Discovery</a></li>
+                <li><a href="join.html" class="nav-link">Join</a></li>
             </ul>
         </nav>
     </header>
@@ -76,9 +78,78 @@
                 </div>
             </div>
         </div>
-        <!-- <h2>Join</h2> -->
+        <div class="main">
+            <div class="aside">
+                <aside>
+                    <div class="sidebar">
+                        <div id="visitMessage"></div>
+                    </div>
+                    <img src="images/ogun.png" loading="lazy" alt="Ogun-State">
+                    <div class="caption">
+                        <h3>Ogun State</h3>
+                        <p>Ogun state in Nigeria stands adorned with a plethora of natural
+                            endowments, including limestone
+                            deposits, crude oil reservoirs, and flourishing rubber tree plantations, among others. Its
+                            capital
+                            city, Abeokuta, derives its name from the profound geological feature it houses, signifying
+                            "under
+                            the rock.
+                        </p>
+                    </div>
+                    <img src="images/subscription.PNG" loading="lazy" alt="subscription_table">
+                </aside>
+            </div>
+            <div class="form">
+                <h2>Newsletter Subscription Form</h2>
+                <form method="get" action="sub.html" class="thankyou">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label>Firstname</label>
+                        <input type="text" name="firstname" autocomplete="on" required>
+
+                        <label>Lastname</label>
+                        <input type="text" name="lastname" autocomplete="on" required>
+
+                        <label>Email</label>
+                        <input type="email" name="email" autocomplete="on" required placeholder="example@email.com">
+
+                        <label>Phone No.</label>
+                        <input type="tel" name="phone" placeholder="123-456-7890" maxlength="14" autocomplete="off"
+                            required>
+
+                        <!--</fieldset> -->
+                        <div class="members_level">
+                            <legend>Devices of Interest</legend>
+                            <input type="radio" id="first" name="options" value="NP" required><label for="first">All
+                                Devices</label><br>
+                            <input type="radio" id="second" name="options" value="Bronze" required><label
+                                for="second">Mobile Phones</label><br>
+                            <input type="radio" id="third" name="options" value="Silver" required><label
+                                for="third">Smart Watches</label><br>
+                            <input type="radio" id="forth" name="options" value="Gold" required><label
+                                for="forth">Laptops</label>
+                        </div>
+                        <!-- </fieldset>
+                            <fieldset class="description"> -->
+                        <legend>Suggestion to help Us Improve</legend>
+                        <label for="business_name">Observation</label>
+                        <input type="text" id="business_name" name="business_name" required>
+                        <label for="description">Sugggestions</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                        <!-- <label for="timestamp">Timestamp:</label> -->
+                        <input type="hidden" id="timestamp" name="timestamp">
+                        <!-- <a href="thankyou.html" class="button">Submit</a> -->
+                        <input type="submit" id="submit" value="Submit Form" aria-label="Submit your data">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126676.53382489638!2d3.2775740939118307!3d7.167355044946147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4bf6995dfc7f%3A0x6734fcf62892478d!2sAbeokuta%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1729520701161!5m2!1sen!2sng"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         <div class="sociolinks">
             <a href="https://web.facebook.com/" target="_blank">
                 <img src="images/facebook-svg.webp" alt="facebook icon" width="25">

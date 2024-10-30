@@ -92,11 +92,19 @@ nav .active {
     content: "❌";
 }
 
+.nav-link.active {
+    color: var(--text-color);
+    background-color: var(--Background_Color);
+    /* Example color for active link */
+    font-weight: bold;
+}
+
 .background {
     background-color: var(--Tetiary);
     justify-content: center;
     display: flex;
     position: relative;
+    width: auto;
 }
 
 .background img {
@@ -153,7 +161,16 @@ nav .active {
 #phone,
 #watch,
 #laptop {
+    background-color: #fb9898;
+}
+
+#subhead {
     background-color: var(--secondary);
+}
+
+iframe {
+    width: 100%;
+    height: 200;
 }
 
 footer {

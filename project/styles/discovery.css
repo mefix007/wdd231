@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+:root {
+    --primary: #f47171;
+    --secondary: #fdefef;
+    --Tetiary: #4f0606;
+    --Additional_Color: rgba(224, 112, 112, 0.722);
+    --Background_Color: #fffafa;
+    --text-color: #0e0e0e;
+    /* --active: rgba(240, 170, 40, 0.849); */
+    --nav-text: rgb(138, 183, 228);
+    /* --layout: solid 1px rgb(253, 105, 112); */
+    --cards: rgb(220, 232, 240);
+}
+
+#showDevices {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-evenly;
+}
+
+#showDevices img {
+    transition: transform 0.3s ease;
+}
+
+#showDevices img:hover {
+    transform: scale(1.03);
+}
+
+#mydialog {
+    height: fit-content;
+    max-width: 300px;
+    justify-self: center;
+    align-self: center;
+}
+
+#title {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: var(--Background_Color);
+    padding: 2px;
+    border-bottom: #777 1px solid;
+}
+
+#mydialog p {
+    padding: 5px;
+    color: #111a38;
+}
+
+::backdrop {
+    background-color: var(--Additional_Color);
+}
