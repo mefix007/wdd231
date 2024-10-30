@@ -121,7 +121,7 @@ function displayItems(data) {
         photo.src = `${element.path}`
         photo.alt = element.name
         photo.setAttribute('loading', 'lazy');
-        photo.setAttribute('width', '360');
+        photo.setAttribute('width', '300');
         photo.setAttribute('height', '320');
         // add an event listener to the photos
         photo.addEventListener('click', () => showItems(element));
