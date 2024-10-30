@@ -43,9 +43,7 @@ showInfo.innerHTML = `
 <p><strong>${show("firstname")} ${show("lastname")}</strong></p>
 <p>${clickableEmail}</p>
 <p>${show("phone")}</p>
-<p>${show("organisation")}</p>
 <p>${show("option")}</p>
-<p>${show("business_name")}</p>
 <p>${show("title")}</p>
 <p>${show("description")}</p>
 <p>Today: ${timestamp}</p>
